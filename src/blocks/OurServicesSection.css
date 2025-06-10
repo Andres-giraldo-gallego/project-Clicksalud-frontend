@@ -1,0 +1,59 @@
+.section {
+  box-sizing: border-box;
+  background-color: #e0f2f7;
+  background: linear-gradient(
+    177deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(47, 144, 163, 1) 100%
+  );
+  margin: 0px;
+  padding: 10px;
+  width: 100%;
+}
+.section__card {
+  background-color: white;
+  border-radius: 20px;
+  padding: 8px;
+}
+.Section__Title {
+  font-size: 30px;
+  text-align: center;
+  padding-top: 25px;
+  margin: 0px;
+}
+
+.section__container-title {
+  text-align: center;
+  padding: 5px;
+}
+.section__description {
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.section__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 2fr));
+  gap: 10px;
+  padding: 40px;
+}
+.section__card-description {
+  font-size: 12px;
+  color: #333;
+  text-align: center;
+  padding: 1px;
+  margin: 0px;
+}
+.section__card-title {
+  font-size: 18px;
+  text-align: center;
+  padding: 1px;
+  margin: 0px;
+  font-weight: bold;
+}
+html {
+  scroll-behavior: smooth;
+}

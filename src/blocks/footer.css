@@ -1,175 +1,69 @@
 /* Footer.css */
 
 .footer {
-  background-color: #ffffff; /* bg-white */
-  padding-top: 3rem; /* pt-12 (12 * 0.25rem = 3rem) */
-  padding-bottom: 1.5rem; /* pb-6 (6 * 0.25rem = 1.5rem) */
+  box-sizing: border-box;
+  background-color: #2d2d2d;
+  color: rgb(29, 222, 68);
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
 }
 
-.footer-container {
-  max-width: 1200px; /* Equivalent to a common 'container' max-width, adjust if your tailwind container has a specific value */
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1rem; /* px-4 */
-  padding-right: 1rem; /* px-4 */
+.footer__logo {
+  width: 50px;
+  height: auto;
+  border-radius: 50px;
 }
-
-.footer-grid {
-  display: grid;
-  grid-template-columns: 1fr; /* grid-cols-1 */
-  gap: 2rem; /* gap-8 (8 * 0.25rem = 2rem) */
-}
-
-@media (min-width: 768px) {
-  /* md breakpoint */
-  .footer-grid {
-    grid-template-columns: repeat(4, 1fr); /* md:grid-cols-4 */
-  }
-}
-
-.footer-section-logo {
-  grid-column: span 1 / span 1; /* col-span-1 */
-}
-
-@media (min-width: 768px) {
-  /* md breakpoint */
-  .footer-section-logo {
-    grid-column: span 1 / span 1; /* md:col-span-1 */
-  }
-}
-
-.footer-description {
-  margin-top: 1rem; /* mt-4 */
-  color: #4a5568; /* text-gray-600 */
-}
-
-.footer-social-links {
+.footer__section-logo {
   display: flex;
-  space-x: 1rem; /* This is handled by margin-right on child elements */
-  margin-top: 1.5rem; /* mt-6 */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem; /* mb-6 */
+}
+.footer__description {
+  color: snow;
+  font-size: 14px;
 }
 
-.footer-social-links a {
-  color: #a0aec0; /* text-gray-400 */
-  transition-property: color; /* transition-colors */
-  transition-duration: 150ms; /* default transition duration */
-  transition-timing-function: cubic-bezier(
-    0.4,
-    0,
-    0.2,
-    1
-  ); /* default transition timing function */
+.footer__grid {
+  padding-block: 1px;
+  display: flex;
+  gap: 8rem;
+  max-width: 100%;
+  width: 100%;
+}
+.footer__section-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: white;
+  margin: 0%;
 }
 
-.footer-social-links a:hover {
-  color: #06b6d4; /* hover:text-cyan-500 */
-}
-
-/* Adjust icon size if needed, 'lucide-react' sets it via size prop */
-.footer-social-links svg {
-  width: 20px; /* size={20} */
-  height: 20px; /* size={20} */
-}
-
-.footer-section-title {
-  font-weight: 500; /* font-medium */
-  color: #2d3748; /* text-gray-800 */
-  margin-bottom: 1rem; /* mb-4 */
-}
-
-.footer-list {
-  list-style: none; /* Remove default list style */
-  padding: 0;
-  margin: 0;
-  line-height: 1.5; /* You might need to adjust this for 'space-y-2' */
-}
-
-.footer-list li {
-  margin-bottom: 0.5rem; /* Equivalent to space-y-2 */
-}
-
-.footer-list a {
-  color: #4a5568; /* text-gray-600 */
-  transition-property: color; /* transition-colors */
-  transition-duration: 150ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  text-decoration: none; /* Ensure links don't have underline by default */
-}
-
-.footer-list a:hover {
-  color: #fb923c; /* hover:text-orange-400 */
-}
-
-.footer-contact-list {
+.footer__list {
   list-style: none;
   padding: 0;
   margin: 0;
-  line-height: 1.5; /* You might need to adjust this for 'space-y-3' */
 }
-
-.footer-contact-list li {
-  display: flex; /* flex */
-  align-items: flex-start; /* items-start */
-  margin-bottom: 0.75rem; /* Equivalent to space-y-3 (3 * 0.25rem = 0.75rem) */
+.footer__list a {
+  text-wrap-mode: nowrap;
+  color: white;
+  text-decoration: inherit;
+  font-weight: 500;
+  font-family: sans-serif;
+  font-size: 14px;
 }
-
-.footer-contact-list li:last-child {
-  margin-bottom: 0; /* Remove margin for the last item if not needed */
+.footer__logo-container {
+  display: flex;
+  align-items: center;
 }
-
-.footer-contact-list svg {
-  width: 18px; /* size={18} */
-  height: 18px; /* size={18} */
-  color: #06b6d4; /* text-cyan-500 */
-  margin-right: 0.5rem; /* mr-2 */
-  margin-top: 0.125rem; /* mt-0.5 for the first item */
+.footer__social-icons {
+  width: 100%;
 }
-
-.footer-contact-list li:nth-child(2) svg,
-.footer-contact-list li:nth-child(3) svg {
-  margin-top: 0; /* Adjust if items-center is meant to vertically align everything */
-}
-
-.footer-contact-list span {
-  color: #4a5568; /* text-gray-600 */
-}
-
-.footer-bottom-border {
-  border-top: 1px solid #e2e8f0; /* border-t border-gray-200 */
-  margin-top: 2.5rem; /* mt-10 (10 * 0.25rem = 2.5rem) */
-  padding-top: 1.5rem; /* pt-6 (6 * 0.25rem = 1.5rem) */
-}
-
-.footer-bottom-content {
-  display: flex; /* flex */
-  flex-direction: column; /* flex-col */
-  justify-content: space-between; /* justify-between */
-  align-items: center; /* items-center */
-}
-
-@media (min-width: 768px) {
-  /* md breakpoint */
-  .footer-bottom-content {
-    flex-direction: row; /* md:flex-row */
-  }
-}
-
-.footer-copyright {
-  color: #4a5568; /* text-gray-600 */
-  font-size: 0.875rem; /* text-sm (14px) */
-}
-
-.footer-payment-methods {
-  margin-top: 1rem; /* mt-4 */
-}
-
-@media (min-width: 768px) {
-  /* md breakpoint */
-  .footer-payment-methods {
-    margin-top: 0; /* md:mt-0 */
-  }
-}
-
-.footer-payment-methods img {
-  height: 1.5rem; /* h-6 (6 * 0.25rem = 1.5rem) */
+.footer__copyright {
+  text-align: center;
+  font-size: 16px;
+  color: #ccc;
+  margin-top: 1rem;
 }

@@ -1,5 +1,8 @@
 @import './blocks/App.css';
-
+#root {
+  max-width: initial !important;
+  padding: 0 !important;
+}
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

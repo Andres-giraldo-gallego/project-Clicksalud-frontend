@@ -1,0 +1,63 @@
+.section__main-categories {
+  width: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.section__grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(298px, 2fr));
+  gap: 15px;
+  width: 100%;
+  padding-bottom: 10px;
+  max-width: 1400px;
+  margin: auto;
+}
+.section__card-1 {
+  background-color: rgb(78, 209, 235);
+  border-radius: 20px;
+  height: 70px;
+  color: black;
+}
+.section__card-2 {
+  background-color: rgb(153, 192, 135);
+  border-radius: 20px;
+  height: 70px;
+  color: black;
+}
+.section__card-3 {
+  background-color: rgb(88, 178, 178);
+  border-radius: 20px;
+  height: 70px;
+  color: black;
+}
+.section__card-4 {
+  background-color: rgb(123, 222, 242);
+  border-radius: 20px;
+  height: 70px;
+  color: black;
+}
+.section__card-5 {
+  background-color: rgb(147, 185, 218);
+  border-radius: 20px;
+  height: 70px;
+  color: black;
+}
+.section__card-6 {
+  background-color: rgb(83, 215, 176);
+  border-radius: 20px;
+  height: 70px;
+  color: black;
+}
+.section__card-7 {
+  background-color: rgb(128, 207, 167);
+  border-radius: 20px;
+  height: 70px;
+  color: black;
+}
+.section__card-8 {
+  background-color: rgb(77, 206, 185);
+  border-radius: 20px;
+  height: 70px;
+  color: black;
+}
