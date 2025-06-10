@@ -64,6 +64,21 @@
 .footer__copyright {
   text-align: center;
   font-size: 16px;
-  color: #ccc;
-  margin-top: 1rem;
+  color: #01ff2b;
+  margin-top: 2.5rem;
+}
+.footer__payment-methods {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+}
+a:hover {
+  color: #01ff2b;
+}
+.footer__payment-methods svg {
+  stroke: #01ff2b;
+  fill: #01ff2b;
+  stroke-width: 0;
+  height: 3em;
+  width: 3em;
 }

@@ -1,16 +1,16 @@
-.tosproductiva__card {
+.DolorMuscular__card {
   display: flex;
   flex-direction: column;
   padding: 20px;
   max-width: 20%;
 }
-.tosproductiva__container {
+.DolorMuscular__container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
-.tosproductiva__img {
+.DolorMuscular__img {
   display: flex;
   align-items: center;
   max-width: 93%;

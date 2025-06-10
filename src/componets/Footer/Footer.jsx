@@ -61,7 +61,9 @@ const Footer = () => {
             <div className='footer__bottom-content'>
               <p className='footer__copyright'>Servicio Personalizado</p>
               <div className='footer__payment-methods'>
-                <FaWhatsapp />
+                <a href=' https://wa.me/573045800233?text=Hola,%20me%20interesa%20conocer%20más%20sobre%20los%20productos%20y%20servicios%20de%20tu%20farmacia%20online.%20¿Podrías%20brindarme%20información?'>
+                  <FaWhatsapp />
+                </a>
               </div>
             </div>
           </div>
