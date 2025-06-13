@@ -1,16 +1,17 @@
-const url = 'https://forecast9.p.rapidapi.com/';
-const options = {
-  method: 'GET',
-  headers: {
-    'x-rapidapi-key': 'c8ab2beb43msh312b84eeb772d8cp1d9b6cjsna5b9605acbdf',
-    'x-rapidapi-host': 'forecast9.p.rapidapi.com',
-  },
-};
+function GetWeatherData() {
+  navigator.geolocation.getCurrentPosition((pos) => {
+    fetch(
+      'https://api.open-meteo.com/v1/forecast?latitude=' +
+        pos.coords.latitude +
+        '&longitude=' +
+        pos.coords.longitude +
+        '&current=temperature_2m,wind_speed_10m&hourly=temperature_2m,relative_humidity_2m,wind_speed_10m'
+    )
+      .then((res) => res.json())
 
-try {
-  const response = await fetch(url, options);
-  const result = await response.text();
-  console.log(result);
-} catch (error) {
-  console.error(error);
+      .then((res) => {
+        console.log(res);
+      });
+  });
 }
+export default GetWeatherData;
