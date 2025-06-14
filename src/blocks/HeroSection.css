@@ -39,4 +39,10 @@
   .section__hero-image {
     display: none;
   }
+  .section__hero-description {
+    font-size: 16px;
+  }
+  .section__icon-container {
+    gap: 15px;
+  }
 }

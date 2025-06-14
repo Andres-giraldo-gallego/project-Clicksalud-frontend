@@ -1,8 +1,15 @@
 import '../../blocks/Header.css';
 import Logo from '../../images/clicksaludfarmacia.png';
 import { Link } from 'react-router-dom';
+import { GiHamburgerMenu } from 'react-icons/gi';
+import { useState } from 'react';
 
 const Header = () => {
+  const [isActive, setIsActive] = useState(false);
+  const toggleMenu = () => {
+    setIsActive(!isActive);
+  };
+
   return (
     <header className='header'>
       <Link to='/'>
@@ -12,11 +19,20 @@ const Header = () => {
         </div>
       </Link>
       <div className='header__container'>
-        <nav className='header__nav'>
+        <img
+          src={Logo}
+          alt='ClickSalud Logo'
+          className='footer__logo'
+          id='logo__mobiel'
+        />
+        <button onClick={toggleMenu} className='header__menu-button'>
+          <GiHamburgerMenu />
+        </button>
+        <nav className={`header__nav ${isActive ? 'header__nav-active' : ''}`}>
           <ul className='header__nav-list'>
             <Link to='/'>
-              <li className='header__nav-item'>
-                <a href='#Inicio'>Inicio</a>
+              <li className='header__nav-item' href='#Inicio'>
+                Inicio
               </li>
             </Link>
             <li className='header__nav-item'>
