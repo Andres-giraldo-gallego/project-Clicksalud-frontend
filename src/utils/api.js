@@ -1,4 +1,4 @@
-function GetWeatherData() {
+function GetWeatherData(climate) {
   navigator.geolocation.getCurrentPosition((pos) => {
     fetch(
       'https://api.open-meteo.com/v1/forecast?latitude=' +
@@ -10,7 +10,7 @@ function GetWeatherData() {
       .then((res) => res.json())
 
       .then((res) => {
-        console.log(res);
+        climate(res);
       });
   });
 }

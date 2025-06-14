@@ -39,9 +39,6 @@
   grid-template-columns: repeat(auto-fill, minmax(250px, 2fr));
   gap: 10px;
   padding: 40px;
-  @media (max-width: 350px) {
-    display: flex;
-  }
 }
 .section__card-description {
   font-size: 12px;
@@ -59,4 +56,13 @@
 }
 html {
   scroll-behavior: smooth;
+}
+
+@media (max-width: 600px) {
+  .section__grid {
+    grid-template-columns: 1fr;
+  }
+  .section__description {
+    padding-bottom: 5px;
+  }
 }

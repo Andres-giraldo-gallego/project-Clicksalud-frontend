@@ -14,3 +14,18 @@
   display: flex;
   align-items: center;
 }
+@media (max-width: 1000px) {
+  .tosseca__container {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 814px) {
+  .tosseca__card {
+    max-width: 100%;
+  }
+  .tosseca__img {
+    width: 100%;
+    height: auto;
+  }
+}

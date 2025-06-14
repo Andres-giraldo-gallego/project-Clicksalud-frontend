@@ -35,3 +35,8 @@
   gap: 50px;
   margin-top: 10px;
 }
+@media (max-width: 600px) {
+  .section__hero-image {
+    display: none;
+  }
+}

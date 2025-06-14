@@ -28,3 +28,9 @@
   gap: 20px;
   padding: 5px;
 }
+
+@media (max-width: 600px) {
+  .section__grid-cards-vision-mission {
+    grid-template-columns: 1fr;
+  }
+}

@@ -15,3 +15,18 @@
   align-items: center;
   max-width: 93%;
 }
+@media (max-width: 1000px) {
+  .Antigripales__container {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 814px) {
+  .Antigripales__card {
+    max-width: 100%;
+  }
+  .Antigripales__img {
+    width: 100%;
+    height: auto;
+  }
+}

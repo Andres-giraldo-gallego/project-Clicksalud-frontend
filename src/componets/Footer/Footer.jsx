@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Logo from '../../images/clicksaludfarmacia.png';
 import '../../blocks/Footer.css';
 import '../../blocks/App.css';
@@ -7,8 +7,21 @@ import { AiFillInstagram } from 'react-icons/ai';
 import { AiFillTwitterCircle } from 'react-icons/ai';
 import { FaWhatsapp } from 'react-icons/fa';
 import GetWeatherData from '../../utils/Api';
+import { useState } from 'react';
 
 const Footer = () => {
+  const [weatherData, setWeatherData] = useState(null);
+  useEffect(() => {
+    GetWeatherData((res) => {
+      setWeatherData(
+        res.current.temperature_2m +
+          '°C, ' +
+          res.current.wind_speed_10m +
+          ' km/h'
+      );
+    });
+  }, []);
+
   return (
     <footer className='footer' id='contacto'>
       <div className='footer__container'>
@@ -20,7 +33,7 @@ const Footer = () => {
                 ClickSalud Farmacia Tu farmacia online de confianza,
                 comprometida con tu salud y bienestar.
               </p>
-              <GetWeatherData />
+              <p>{weatherData}</p>
             </div>
 
             <div className='footer__social-icons'>

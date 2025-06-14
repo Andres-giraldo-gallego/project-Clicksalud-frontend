@@ -29,7 +29,7 @@
 .footer__grid {
   padding-block: 1px;
   display: flex;
-  gap: 8rem;
+  gap: 5rem;
   max-width: 100%;
   width: 100%;
 }
@@ -81,4 +81,26 @@ a:hover {
   stroke-width: 0;
   height: 3em;
   width: 3em;
+}
+
+@media (max-width: 800px) {
+  .footer__grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .footer__section-logo {
+    margin-bottom: 1rem;
+  }
+  .footer__list a {
+    font-size: 12px;
+  }
+  .footer__section-title {
+    font-size: 14px;
+  }
+}
+@media (max-width: 600px) {
+  .footer__description {
+    font-size: 12px;
+  }
 }

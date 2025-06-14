@@ -15,3 +15,18 @@
   align-items: center;
   max-width: 93%;
 }
+@media (max-width: 1000px) {
+  .Adelgazar__container {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 814px) {
+  .Adelgazar__card {
+    max-width: 100%;
+  }
+  .Adelgazar__img {
+    width: 100%;
+    height: auto;
+  }
+}
