@@ -1,4 +1,7 @@
 @import './blocks/App.css';
+@import './blocks/normalize.css';
+@import './blocks/fonts.css';
+
 #root {
   max-width: initial !important;
   padding: 0 !important;

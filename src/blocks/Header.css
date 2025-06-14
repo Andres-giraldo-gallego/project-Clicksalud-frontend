@@ -93,7 +93,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .header__nav-list {
     gap: 3px;
     font-size: 8px;
@@ -115,8 +115,6 @@
   #logo__mobiel {
     display: block;
   }
-}
-@media (max-width: 400px) {
   .header__signin-button {
     padding: 14px 7px;
   }
