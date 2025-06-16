@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect, useState } from 'react'; // Importa useState aquí
 import Logo from '../../images/clicksaludfarmacia.png';
 import '../../blocks/Footer.css';
 import '../../blocks/App.css';
@@ -6,20 +6,33 @@ import { AiFillFacebook } from 'react-icons/ai';
 import { AiFillInstagram } from 'react-icons/ai';
 import { AiFillTwitterCircle } from 'react-icons/ai';
 import { FaWhatsapp } from 'react-icons/fa';
-import GetWeatherData from '../../utils/Api';
-import { useState } from 'react';
+import GetWeatherData from '../../utils/Api'; // Tu función para obtener datos del clima
 
 const Footer = () => {
   const [weatherData, setWeatherData] = useState(null);
+  const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(true);
+
   useEffect(() => {
-    GetWeatherData((res) => {
+    const handleSuccess = (res) => {
       setWeatherData(
         res.current.temperature_2m +
           '°C, ' +
           res.current.wind_speed_10m +
           ' km/h'
       );
-    });
+      setLoading(false);
+      setError(null);
+    };
+
+    // Función que se ejecutará si GetWeatherData encuentra un error
+    const handleError = (errorMessage) => {
+      setError(errorMessage);
+      setLoading(false);
+      setWeatherData(null);
+    };
+
+    GetWeatherData(handleSuccess, handleError);
   }, []);
 
   return (
@@ -33,7 +46,31 @@ const Footer = () => {
                 ClickSalud Farmacia Tu farmacia online de confianza,
                 comprometida con tu salud y bienestar.
               </p>
-              <p>{weatherData}</p>
+
+              <div className='weather-info-container'>
+                {loading && <p>Cargando clima de Palmira...</p>}
+                {error && (
+                  <p
+                    className='weather-error-message'
+                    style={{ color: '#D32F2F', fontSize: '0.9em' }}
+                  >
+                    Error al obtener clima: {error}
+                  </p>
+                )}
+                {weatherData && !loading && !error && (
+                  <p>
+                    Clima en Palmira: <strong>{weatherData}</strong>
+                  </p>
+                )}
+                {!weatherData && !loading && !error && (
+                  <p
+                    className='weather-unavailable-message'
+                    style={{ fontSize: '0.9em', color: '#666' }}
+                  >
+                    Clima no disponible.
+                  </p>
+                )}
+              </div>
             </div>
 
             <div className='footer__social-icons'>
