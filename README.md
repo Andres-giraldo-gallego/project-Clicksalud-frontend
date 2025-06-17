@@ -1,12 +1,32 @@
-# React + Vite
+Nombre del Proyecto: Clicksalud farmacia
+Este proyecto es una aplicación web dinámica diseñada para proporcionar información sobre medicamentos, con un fuerte énfasis en la seguridad y el bienestar del usuario, e incluye datos del clima relevantes para la ubicación del usuario.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Tecnologías Utilizadas
+Este proyecto frontend ha sido construido con las siguientes tecnologías clave:
 
-Currently, two official plugins are available:
+React.js: Una librería de JavaScript para construir interfaces de usuario interactivas y eficientes.
+HTML: El lenguaje estándar para la creación de la estructura y contenido de las páginas web.
+CSS: Hojas de estilo en cascada para dar estilo y diseño a la aplicación, incluyendo animaciones y un diseño responsivo.
+Metodología BEM (Block, Element, Modifier): Utilizada para organizar las clases CSS de manera modular y escalable, facilitando el mantenimiento y la colaboración.
+JavaScript (ES6+): El lenguaje de programación principal para la lógica interactiva del frontend.
+NPM (Node Package Manager): Utilizado para la gestión de paquetes y dependencias del proyecto.
+[React Icons]: Librería de iconos populares (como las que usas para Facebook, Instagram, Twitter y WhatsApp).
+✨ Características Principales
+Información de Medicamentos: Acceso a una base de datos de medicamentos con detalles relevantes.
+Contacto con Profesionales: Sugerencia explícita y recomendación para que los usuarios consulten a un profesional de la salud antes de tomar decisiones basadas en la información proporcionada. Esto subraya la importancia de la asesoría médica.
+Datos del Clima en Tiempo Real: Consumo de una API externa para mostrar la temperatura actual y la velocidad del viento en la ubicación del usuario, proporcionando información adicional útil.
+Interfaz de Usuario Intuitiva: Diseño limpio y fácil de navegar para una excelente experiencia de usuario.
+Diseño Responsivo: La aplicación está optimizada para verse y funcionar bien en una variedad de dispositivos y tamaños de pantalla (móvil, tableta, escritorio).
+☁️ Integración de API Externa
+Este proyecto consume la siguiente API externa para enriquecer la experiencia del usuario:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Open-Meteo API: Utilizada para obtener datos meteorológicos actuales (temperatura y velocidad del viento) basados en la geolocalización del usuario. Esto permite ofrecer información climática relevante en tiempo real en el Footer de la aplicación.
+⚠️ Nota Importante: Descargo de Responsabilidad Médica
+La información sobre medicamentos proporcionada en esta aplicación tiene fines exclusivamente informativos. No debe interpretarse como asesoramiento médico profesional, diagnóstico o tratamiento.
 
-## Expanding the ESLint configuration
+Es crucial y altamente recomendado que cualquier decisión relacionada con su salud, medicamentos o tratamientos sea consultada SIEMPRE con un profesional de la salud cualificado (médico, farmacéutico, etc.). Nunca ignore el consejo médico profesional ni retrase la búsqueda del mismo debido a algo que haya leído en esta aplicación.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+github pages https://github.com/Andres-giraldo-gallego/project-Clicksalud-frontend.git
+
+📧 Contacto
+Si tienes alguna pregunta o sugerencia, no dudes en contactar al equipo de desarrollo en [andresgi0521@hotmail.com].
