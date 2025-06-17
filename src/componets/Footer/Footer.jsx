@@ -6,7 +6,7 @@ import { AiFillFacebook } from 'react-icons/ai';
 import { AiFillInstagram } from 'react-icons/ai';
 import { AiFillTwitterCircle } from 'react-icons/ai';
 import { FaWhatsapp } from 'react-icons/fa';
-import GetWeatherData from '../../utils/Api'; // Tu función para obtener datos del clima
+import GetWeatherData from '../../utils/api'; // Tu función para obtener datos del clima
 
 const Footer = () => {
   const [weatherData, setWeatherData] = useState(null);
