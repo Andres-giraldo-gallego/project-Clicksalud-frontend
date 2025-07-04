@@ -55,13 +55,13 @@
 #logo__mobiel {
   display: none;
 }
-@media (min-width: 800px) {
+@media (min-width: 970px) {
   .header__nav-item-auth {
     display: none;
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 970px) {
   .header__bottom-mobile {
     display: none;
   }
@@ -91,7 +91,7 @@
     padding: 14px 7px;
   }
   .header__signup-button {
-    padding: 14px 7px;
+    padding: 14px 12px;
     font-size: 8px;
   }
   .header__menu-button {
